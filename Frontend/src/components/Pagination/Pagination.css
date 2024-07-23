@@ -1,0 +1,10 @@
+.pagination{
+    /* background-color: red; */
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+}
+
+.pagination li a{
+    font-size: 2rem;
+}

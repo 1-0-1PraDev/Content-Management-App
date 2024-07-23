@@ -1,0 +1,53 @@
+.header{
+    padding: var(--common-padding);
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logoBx h1{
+    font-size: 2.7rem;
+    color: #000;
+}
+
+.header .navigation ul{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.header .navigation ul li{
+    position: relative;
+}
+
+.header .navigation ul li a{
+    font-size: 1.5rem;
+}
+
+.header .navigation ul li::before{
+    content: '';
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: var(--color-cyan);
+    transition: 0.8s ease;
+    opacity: 0;
+}
+
+.header .navigation ul li:hover::before{
+    opacity: 1;
+}
+
+.btnBx{
+    display: flex;
+    gap: 1.2rem;
+}
+
+/* .header .navigation ul li a:not(:last-child){
+    margin-left: 
+} */

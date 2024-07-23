@@ -1,0 +1,22 @@
+.comments h2{
+    font-size: 3rem;
+    margin-top: 3.2rem;
+}
+
+.comments ul {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.comments ul li:nth-child(even){
+    text-align: right;
+}
+
+.comments ul li h3{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+}
+
+.comments ul li p{
+    font-size: 1.5rem;
+}

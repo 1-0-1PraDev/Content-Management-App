@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --common-padding: 1rem 6rem;
+  --color-cyan: #2da5fb;
+  --dark-text-color: #0b2c56;
+  --faint-text-color: rgba(0, 0, 0, 0.6);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  border: none;
+  overflow: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #fff;
+
+}
+
+.btn-outline{
+  background-color: purple;
+}
+
+.btn-primary{
+  background-color: var(--color-cyan);
+}
+
+.active{
+  color: red;
+}
+
+/* Index Page Styling */
+.main-container {
+  padding: var(--common-padding);
+  /* background-color: red; */
+}
+
+.searchBx {
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.searchBx .search {
+  width: 600px;
+  display: flex;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  align-items: center;
+  border: 2px solid #000;
+  /* height: 50px; */
+}
+
+.searchBx .search > i {
+  width: 30px;
+  font-size: 2.8rem;
+}
+
+.searchBx .search input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.2rem 1.8rem;
+}
+
+.categoryBx {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryBx ul {
+  display: flex;
+  gap: 5rem;
+}
+
+.categoryBx ul li {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.categoryBx ul li a:hover {
+  color: var(--color-cyan);
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+  align-items: start;
+  margin: 3rem 0;
+}
+
+.post-container .main-post {
+  display: flex;
+  /* background-color: red; */
+  justify-content: stretch !important;
+  height: 100%;
+  margin: 0;
+}
+
+.post-container .main-post .rightBx .title-text {
+  font-size: 2.4rem;
+  line-height: 1.34;
+}
+
+.post-container .main-post .rightBx .desc-text {
+  font-size: 1.5rem;
+  line-height: 1.34;
+}
+
+.container {
+  padding: var(--common-padding);
+  margin: 4.5rem 0;
+}
+
+/* Login/Register Page Styling */
+
+.container form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  /* background:red; */
+  align-items: center;
+}
+
+.inputBx{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.inputBx input, select {
+  width: 100%;
+  font-size: 1.5rem;
+  border: 2px solid #000;
+  padding: 1rem 1.2rem;
+  border-radius: 0.4rem;
+}
+
+.inputBx label {
+  font-size: 1.8rem;
+  display: block;
+}
+
+.topHeader {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-post-container{
+  padding: var(--common-padding);
+}
+
+.create-post-container form{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.create-post-container form .inputBx{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;  
+}
+
+.edit-post-container{
+  padding: var(--common-padding);
+}
+
+.edit-post-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+@media (max-width: 991px) {
+  :root {
+    --common-padding: 1rem 3rem;
+  }
+
+  html {
+    font-size: 54%;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --common-padding: 1rem;
+  }
+  .categoryBx ul {
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .favorite-container .main-post{
+    flex-direction: column !important;
+  }
+
+  html{
+    font-size: 52%;
+  }
+}
